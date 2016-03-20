@@ -9,6 +9,7 @@
     "angular-material": "^1.0.6",
     "angular-material-icons": "^0.6.0",
     "material-design-icons": "^2.2.2",
-    "components-font-awesome": "^4.5.0"
+    "components-font-awesome": "^4.5.0",
+    "wow": "wowjs#^1.1.2"
   }
 }

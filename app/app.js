@@ -14,7 +14,7 @@
   ]).config(function ($mdIconProvider, $mdThemingProvider) {
     $mdThemingProvider.theme('default')
         .primaryPalette('amber')
-        .accentPalette('orange');
+        .accentPalette('amber');
 
     $mdIconProvider
         .iconSet('social', 'bower_components/material-design-icons/sprites/svg-sprite/svg-sprite-social.svg', 24)
@@ -47,20 +47,10 @@
                   'title': 'developer',
                   'company': 'Name of company',
                   'description': ' description',
-                   'skill': [
-                     { 'name': 'HTML', 'val':80},
-                     { 'name': 'JAVA', 'val':60},
-                     { 'name': 'CSS', 'val':50}
-                   ]
-                },
-                {
-                  'title': 'developer',
-                  'company': 'Name of company',
-                  'description': ' description',
                   'skill': [
-                    { 'name': 'HTML', 'val':80},
-                    { 'name': 'JAVA', 'val':60},
-                    { 'name': 'CSS', 'val':50}
+                    {'name': 'HTML', 'val': 80},
+                    {'name': 'JAVA', 'val': 60},
+                    {'name': 'CSS', 'val': 50}
                   ]
                 },
                 {
@@ -68,9 +58,9 @@
                   'company': 'Name of company',
                   'description': ' description',
                   'skill': [
-                    { 'name': 'HTML', 'val':80},
-                    { 'name': 'JAVA', 'val':60},
-                    { 'name': 'CSS', 'val':50}
+                    {'name': 'HTML', 'val': 80},
+                    {'name': 'JAVA', 'val': 60},
+                    {'name': 'CSS', 'val': 50}
                   ]
                 },
                 {
@@ -78,9 +68,9 @@
                   'company': 'Name of company',
                   'description': ' description',
                   'skill': [
-                    { 'name': 'HTML', 'val':80},
-                    { 'name': 'JAVA', 'val':60},
-                    { 'name': 'CSS', 'val':50}
+                    {'name': 'HTML', 'val': 80},
+                    {'name': 'JAVA', 'val': 60},
+                    {'name': 'CSS', 'val': 50}
                   ]
                 },
                 {
@@ -88,11 +78,31 @@
                   'company': 'Name of company',
                   'description': ' description',
                   'skill': [
-                    { 'name': 'HTML', 'val':80},
-                    { 'name': 'JAVA', 'val':60},
-                    { 'name': 'CSS', 'val':50}
+                    {'name': 'HTML', 'val': 80},
+                    {'name': 'JAVA', 'val': 60},
+                    {'name': 'CSS', 'val': 50}
+                  ]
+                },
+                {
+                  'title': 'developer',
+                  'company': 'Name of company',
+                  'description': ' description',
+                  'skill': [
+                    {'name': 'HTML', 'val': 80},
+                    {'name': 'JAVA', 'val': 60},
+                    {'name': 'CSS', 'val': 50}
                   ]
                 },
               ];
+
+
+              //init function
+              $scope.init  = function () {
+                console.log("asdasd")
+                new WOW().init();
+              }
             }])
+
+
+
 })();

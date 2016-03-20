@@ -1,4 +1,4 @@
-/* line 5, stdin */
+/* line 12, stdin */
 header {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
   width: 100%;
@@ -9,43 +9,43 @@ header {
   transition: top .5s;
   height: 65px; }
   @media screen and (max-width: 1200px) {
-    /* line 5, stdin */
+    /* line 12, stdin */
     header {
       height: 56px; } }
 
-/* line 18, stdin */
+/* line 25, stdin */
 .container {
   margin-top: 70px;
   min-height: 800px; }
   @media screen and (min-width: 1200px) {
-    /* line 18, stdin */
+    /* line 25, stdin */
     .container {
       width: 1200px;
-      margin: 65px auto; } }
+      margin: 15px auto; } }
 
-/* line 27, stdin */
+/* line 34, stdin */
 md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolbar) {
   background-color: #FFFFFF !important;
   color: #727272; }
 
-/* line 32, stdin */
+/* line 39, stdin */
 .search {
   padding-top: 25px; }
 
-/* line 35, stdin */
+/* line 42, stdin */
 div.gb-Menu > ul {
   margin: 0;
   float: right; }
-  /* line 38, stdin */
+  /* line 45, stdin */
   div.gb-Menu > ul li {
     background-color: transparent;
     margin-left: 40px;
     float: left;
     padding: 0px; }
-    /* line 43, stdin */
+    /* line 50, stdin */
     div.gb-Menu > ul li:hover {
       background-color: transparent; }
-    /* line 46, stdin */
+    /* line 53, stdin */
     div.gb-Menu > ul li a {
       color: #727272;
       padding: 18px 0;
@@ -57,48 +57,68 @@ div.gb-Menu > ul {
       transition: all 0.3s ease-out;
       font-size: 13px;
       font-weight: 500; }
-      /* line 57, stdin */
+      /* line 64, stdin */
       div.gb-Menu > ul li a:hover {
-        border-bottom-color: #00bcd4; }
+        border-bottom-color: #FF6F00; }
 
-/* line 63, stdin */
+/* line 70, stdin */
 ul, ol {
   list-style: none;
   list-style-image: none; }
 
-/* line 68, stdin */
+/* line 75, stdin */
 .gb-Card {
   /*height: 270px;*/ }
-  /* line 70, stdin */
+  /* line 77, stdin */
   .gb-Card img {
     height: 230px; }
 
-/* line 74, stdin */
+/* line 81, stdin */
 md-sidenav {
   z-index: 1000; }
 
 /*Footer*/
-/* line 79, stdin */
+/* line 86, stdin */
 .footer {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.35); }
 
-/* line 82, stdin */
+/* line 89, stdin */
 .footer-wrap {
   padding: 25px 0;
   position: relative;
   background-color: #FFFFFF !important; }
 
-/* line 89, stdin */
+/* line 96, stdin */
 .gb-social-network div:hover {
   cursor: pointer; }
 
-/* line 94, stdin */
+/* line 101, stdin */
 .ng-card-jobs {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   margin: 5px; }
 
-/* line 99, stdin */
+/* line 106, stdin */
 .gb-banner {
   background: url("../img/home-bg.jpg") no-repeat fixed center center/cover;
   width: 100%;
   height: auto; }
+
+/* line 114, stdin */
+.gb-toolbar-header {
+  background-color: #E0E0E0;
+  color: #1a171b; }
+
+/* line 119, stdin */
+.gb-overview {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 700px; }
+  @media screen and (max-width: 600px) {
+    /* line 119, stdin */
+    .gb-overview {
+      height: 400px; } }
+
+/* line 127, stdin */
+.gb-advertising {
+  text-align: left;
+  color: #FFFFFF; }
