@@ -1,0 +1,110 @@
+$container-large: 1200px;
+$header-background : #FFFFFF !important;
+$header-color : #727272;
+
+header {
+  box-shadow: 0 1px 6px rgba(0,0,0,.35);
+  width: 100%;
+  top: 0px;
+  position: fixed;
+  z-index: 999;
+  -webkit-transition: top .5s;
+  transition: top .5s;
+  height: 65px;
+  @media screen and (max-width: $container-large) {
+    height: 56px;
+  }
+}
+.container {
+  margin-top: 70px;
+  min-height: 800px;
+  @media screen and (min-width: $container-large) {
+    width: $container-large;
+
+    margin: 65px auto;
+  }
+}
+md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolbar) {
+  background-color: $header-background;
+  color: $header-color;
+}
+
+.search{
+  padding-top: 25px;
+}
+div.gb-Menu > ul {
+  margin: 0;
+  float: right;
+  li {
+    background-color: transparent;
+    margin-left: 40px;
+    float: left;
+    padding: 0px;
+    &:hover{
+      background-color: transparent;
+    }
+    a {
+      color: $header-color;
+      padding: 18px 0;
+      border-bottom: 6px solid transparent;
+      text-transform: uppercase;
+      background-color: transparent;
+      line-height: 24px;
+      -webkit-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+      font-size: 13px;
+      font-weight: 500;
+      &:hover {
+        border-bottom-color: #00bcd4;
+      }
+    }
+  }
+}
+ ul, ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+ .gb-Card{
+   /*height: 270px;*/
+   img {
+     height: 230px;
+   }
+ }
+md-sidenav{
+  z-index: 1000;
+}
+
+/*Footer*/
+.footer {
+  box-shadow: 0 1px 6px rgba(0,0,0,.35);
+}
+.footer-wrap {
+  padding: 25px 0;
+  position: relative;
+  background-color: #FFFFFF !important;
+}
+
+.gb-social-network div {
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.ng-card-jobs{
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  margin: 5px;
+}
+
+.gb-banner {
+
+  background: url("../img/home-bg.jpg") no-repeat fixed center center / cover;
+  width: 100%;
+  height: auto;
+
+  @media screen and (max-width: 600px) {
+
+
+
+  }
+}

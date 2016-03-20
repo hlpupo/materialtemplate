@@ -1,0 +1,14 @@
+{
+  "name": "angular-seed",
+  "description": "A starter project for AngularJS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/angular/angular-seed",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular-material": "^1.0.6",
+    "angular-material-icons": "^0.6.0",
+    "material-design-icons": "^2.2.2",
+    "components-font-awesome": "^4.5.0"
+  }
+}
