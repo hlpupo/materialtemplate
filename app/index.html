@@ -23,7 +23,7 @@
   <div layout="row" layout-xs="column">
 
     <md-toolbar layout-align="center center" layout-align-xs="center center">
-      <div flex flex-gt-md="60" flex-sm="100" class="md-toolbar-tools" layout-align="end center">
+      <div flex flex-gt-lg="60" flex-sm="100" flex-md="100" class="md-toolbar-tools" layout-align="end center">
         <md-button show-xs hide-gt-xs class="md-icon-button" aria-label="Settings"
                    ng-show="!showSearch" ng-click="openSiderNav_Left()">
           <md-icon md-svg-icon="navigation:ic_menu_24px"></md-icon>
@@ -32,7 +32,8 @@
           <img src="img/logo.png" width="200">
         </div>
         <!-- Menu -->
-        <div class="gb-Menu" flex="70" hide-xs layout-align="end center" layout-align-gt-xs="end center" ng-show="!showSearch">
+        <div class="gb-Menu" flex="70" hide-xs layout-align="end center" layout-align-gt-xs="end center"
+             layout-align-gt-sm="end center" ng-show="!showSearch">
           <ul class="inline-menu side-nav" id="mobile-demo">
 
             <li><a href="#about" data-section="#about" class="menu-smooth-scroll">
