@@ -1,4 +1,4 @@
-/* line 12, stdin */
+/* line 18, stdin */
 header {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
   width: 100%;
@@ -9,43 +9,43 @@ header {
   transition: top .5s;
   height: 65px; }
   @media screen and (max-width: 1200px) {
-    /* line 12, stdin */
+    /* line 18, stdin */
     header {
       height: 56px; } }
 
-/* line 25, stdin */
+/* line 31, stdin */
 .container {
   margin-top: 70px;
   min-height: 800px; }
   @media screen and (min-width: 1200px) {
-    /* line 25, stdin */
+    /* line 31, stdin */
     .container {
       width: 1200px;
       margin: 15px auto; } }
 
-/* line 34, stdin */
+/* line 39, stdin */
 md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolbar) {
   background-color: #FFFFFF !important;
   color: #727272; }
 
-/* line 39, stdin */
+/* line 44, stdin */
 .search {
   padding-top: 25px; }
 
-/* line 42, stdin */
+/* line 47, stdin */
 div.gb-Menu > ul {
   margin: 0;
   float: right; }
-  /* line 45, stdin */
+  /* line 50, stdin */
   div.gb-Menu > ul li {
     background-color: transparent;
     margin-left: 40px;
     float: left;
     padding: 0px; }
-    /* line 50, stdin */
+    /* line 55, stdin */
     div.gb-Menu > ul li:hover {
       background-color: transparent; }
-    /* line 53, stdin */
+    /* line 58, stdin */
     div.gb-Menu > ul li a {
       color: #727272;
       padding: 18px 0;
@@ -57,68 +57,167 @@ div.gb-Menu > ul {
       transition: all 0.3s ease-out;
       font-size: 13px;
       font-weight: 500; }
-      /* line 64, stdin */
+      /* line 69, stdin */
       div.gb-Menu > ul li a:hover {
         border-bottom-color: #FF6F00; }
 
-/* line 70, stdin */
+/* line 75, stdin */
 ul, ol {
   list-style: none;
   list-style-image: none; }
 
-/* line 75, stdin */
+/* line 80, stdin */
 .gb-Card {
   /*height: 270px;*/ }
-  /* line 77, stdin */
+  /* line 82, stdin */
   .gb-Card img {
     height: 230px; }
 
-/* line 81, stdin */
+/* line 86, stdin */
 md-sidenav {
   z-index: 1000; }
 
 /*Footer*/
-/* line 86, stdin */
+/* line 91, stdin */
 .footer {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.35); }
 
-/* line 89, stdin */
+/* line 94, stdin */
 .footer-wrap {
   padding: 25px 0;
   position: relative;
   background-color: #FFFFFF !important; }
 
-/* line 96, stdin */
+/* line 101, stdin */
 .gb-social-network div:hover {
   cursor: pointer; }
 
-/* line 101, stdin */
+/* line 106, stdin */
 .ng-card-jobs {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   margin: 5px; }
 
-/* line 106, stdin */
+/* line 111, stdin */
 .gb-banner {
   background: url("../img/home-bg.jpg") no-repeat fixed center center/cover;
   width: 100%;
   height: auto; }
 
-/* line 114, stdin */
+/* line 119, stdin */
 .gb-toolbar-header {
   background-color: #E0E0E0;
   color: #1a171b; }
 
-/* line 119, stdin */
+/* line 124, stdin */
 .gb-overview {
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 700px; }
   @media screen and (max-width: 600px) {
-    /* line 119, stdin */
+    /* line 124, stdin */
     .gb-overview {
       height: 400px; } }
 
-/* line 127, stdin */
+/* line 132, stdin */
 .gb-advertising {
   text-align: left;
   color: #FFFFFF; }
+
+/* line 137, stdin */
+.gb-why {
+  background-color: #f8b333;
+  height: 670px; }
+  @media (min-width: 600px) and (max-width: 959px) {
+    /* line 137, stdin */
+    .gb-why {
+      max-height: 1950px;
+      height: auto; } }
+  @media screen and (max-width: 960px) {
+    /* line 137, stdin */
+    .gb-why {
+      max-height: 1950px;
+      height: auto; } }
+  @media (min-width: 960px) and (max-width: 1919px) {
+    /* line 137, stdin */
+    .gb-why {
+      max-height: 1950px;
+      height: auto; } }
+
+/* line 153, stdin */
+.gb-why-image-parent {
+  width: 100%; }
+
+/* line 156, stdin */
+.gb-why-image {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center; }
+  @media screen and (max-width: 960px) {
+    /* line 156, stdin */
+    .gb-why-image {
+      margin: 0 auto; } }
+  /* line 163, stdin */
+  .gb-why-image img {
+    height: 467px;
+    width: 360px; }
+  @media (min-width: 960px) and (max-width: 1919px) {
+    /* line 169, stdin */
+    .gb-why-image img {
+      height: 467px;
+      width: 460px; } }
+  @media screen and (max-width: 600px) {
+    /* line 175, stdin */
+    .gb-why-image img {
+      height: 467px;
+      width: 460px; } }
+
+/* line 183, stdin */
+.gb-icon-40 {
+  width: 40px;
+  height: 40px; }
+
+/* line 210, stdin */
+.gb-why-text-right {
+  text-align: right; }
+  /* line 188, stdin */
+  .gb-why-text-right div.gb-icon {
+    margin-left: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border: 5px solid #1a171b;
+    height: 45px; }
+  /* line 198, stdin */
+  .gb-why-text-right:hover div.gb-icon {
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: 5px solid #1a171b; }
+    /* line 204, stdin */
+    .gb-why-text-right:hover div.gb-icon md-icon {
+      color: #1a171b; }
+
+/* line 214, stdin */
+.gb-why-text-left {
+  text-align: left; }
+  /* line 188, stdin */
+  .gb-why-text-left div.gb-icon {
+    margin-left: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border: 5px solid #1a171b;
+    height: 45px; }
+  /* line 198, stdin */
+  .gb-why-text-left:hover div.gb-icon {
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: 5px solid #1a171b; }
+    /* line 204, stdin */
+    .gb-why-text-left:hover div.gb-icon md-icon {
+      color: #1a171b; }

@@ -12,10 +12,10 @@
     'myApp.Services',
     'myApp.filters'
   ]).config(function ($mdIconProvider, $mdThemingProvider) {
-    $mdThemingProvider.theme('default')
+    $mdThemingProvider.theme('amber')
         .primaryPalette('amber')
-        .accentPalette('amber');
-
+        .accentPalette('orange');
+    $mdThemingProvider.alwaysWatchTheme(true);
     $mdIconProvider
         .iconSet('social', 'bower_components/material-design-icons/sprites/svg-sprite/svg-sprite-social.svg', 24)
         .iconSet('action', 'bower_components/material-design-icons/sprites/svg-sprite/svg-sprite-action.svg', 24)
@@ -27,6 +27,7 @@
       .controller('controller',
           ['$scope', '$mdMedia', '$mdSidenav',
             function ($scope, $mdMedia, $mdSidenav) {
+              $scope.theme = 'amber';
               $scope.$mdMedia = $mdMedia;
               $scope.urlIcon = "bower";
               $scope.cantCard = [
@@ -96,11 +97,14 @@
               ];
 
 
-              //init function
+              //init function wow
               $scope.init  = function () {
                 console.log("asdasd")
                 new WOW().init();
               }
+
+              //table pricing
+              $scope.pricing = [{},{},{}];
             }])
 
 
