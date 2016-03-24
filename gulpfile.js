@@ -29,6 +29,7 @@ gulp.task('watch', function () {
   gulp.watch(inputFrontend, ['sass']);
   gulp.watch("app/*.html", ['html']);
   gulp.watch("app/*.js", ['js']);
+  gulp.watch("app/directive/*.js", ['js']);
 });
 
 //Liver reload

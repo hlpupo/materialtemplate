@@ -7,6 +7,7 @@
   angular.module('myApp', [
     'ngMaterial',
     'ngMdIcons',
+    'ngAnimate',
     'myApp.controllers',
     'myApp.directives',
     'myApp.Services',
@@ -25,8 +26,8 @@
 
   angular.module('myApp.controllers')
       .controller('controller',
-          ['$scope', '$mdMedia', '$mdSidenav',
-            function ($scope, $mdMedia, $mdSidenav) {
+          ['$scope', '$mdMedia', '$mdSidenav', '$timeout', '$animate',
+            function ($scope, $mdMedia, $mdSidenav, $timeout, $animate) {
               $scope.theme = 'amber';
               $scope.$mdMedia = $mdMedia;
               $scope.urlIcon = "bower";
@@ -94,17 +95,29 @@
                     {'name': 'CSS', 'val': 50}
                   ]
                 },
+                {
+                  'title': 'developer',
+                  'company': 'Name of company',
+                  'description': ' description',
+                  'skill': [
+                    {'name': 'HTML', 'val': 80},
+                    {'name': 'JAVA', 'val': 60},
+                    {'name': 'CSS', 'val': 50}
+                  ]
+                },
               ];
 
 
               //init function wow
               $scope.init  = function () {
-                console.log("asdasd")
                 new WOW().init();
-              }
+              };
 
               //table pricing
               $scope.pricing = [{},{},{}];
+
+
+
             }])
 
 

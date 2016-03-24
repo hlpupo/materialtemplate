@@ -59,7 +59,8 @@
           <md-icon md-svg-icon="action:ic_search_24px"></md-icon>
         </md-button>
 
-        <div class="md-toolbar-tools" ng-show="showSearch" layout="end end" flex="50" flex-xs="100">
+        <div class="md-toolbar-tools gb-find" ng-show="showSearch" layout="end end" flex="50" flex-xs="100"
+        >
           <md-input-container layout-align="end end" flex class="search">
             <label>&nbsp;</label>
             <input ng-model="search.who" placeholder="enter search">
@@ -106,15 +107,11 @@
   </md-content>
 </md-sidenav>
 <!-- begin banner -->
-<div layout="row" class="gb-banner" flex-sm="20">
-  <div layout="row" layout-wrap class="gb-overview">
+<div layout="row" class="gb-banner" flex-sm="100" flex-gt-xs="100">
+  <div layout="row" layout-wrap class="gb-overview" flex-gt-xs="100">
     <div flex layout="column" layout-align="center center" class="wow bounceInUp md-title" ng-class="{shaded:$mdMedia('xs') }"
          data-wow-duration="2s" data-wow-delay="1s">
-      <div class="gb-advertising">
-        <h1>Comercial de gebbook</h1>
-        <h1>Clean and Refreshing Solution for Startup and Agency Sites</h1>
-        <h1>More than 1 200 000 jobs </h1>
-      </div>
+      <gb-carousel></gb-carousel>
     </div>
   </div>
 
@@ -141,6 +138,7 @@
                  flex="22" flex-sm="46" flex-xs="80" ng-class="{shaded:$mdMedia('xs') }"
                  class="gb-Card">
           <img src="img/slider_bg_13-367x367.jpg" class="md-card-image" alt="Washed Out">
+
           <md-card-title>
             <md-card-title-text>
               <span class="md-headline">Company Name</span>
@@ -153,132 +151,133 @@
             </md-button>
           </md-card-actions>
         </md-card>
+
       </div>
     </div>
   </div>
 
 </md-content>
-    <!-- Begin WHY -->
-    <section id="why" class="gb-why md-primary md-hue-5">
-      <div layout="column" layout-margin>
-        <div layout="row" layout-align="center center">
-          <span class="md-display-2">Why Chose</span>
-        </div>
-        <div layout-wrap layout="row" layout-xs="column" layout-sm="column"
-             layout-align-xs="stretch"
-             layout-align-sm="stretch" layout-align="center start" >
-          <div flex="25" flex-offset="0" flex-offset-xs="0" flex-xs="100" flex-sm="100" flex-md="100" flex-lg="40">
-            <div layout="column" layout-margin>
-              <div flex layout="row" class="gb-why-text-right wow fadeInLeftBig" data-wow-offset="10"
-                   data-wow-delay="0.5s" layout-margin>
-                <div layout="column" layout-align="end end" >
-                  <span class="md-display-1"> Header</span>
+<!-- Begin WHY -->
+<section id="why" class="gb-why md-primary md-hue-5">
+  <div layout="column" layout-margin>
+    <div layout="row" layout-align="center center">
+      <span class="md-display-2">Why Chose</span>
+    </div>
+    <div layout-wrap layout="row" layout-xs="column" layout-sm="column"
+         layout-align-xs="stretch"
+         layout-align-sm="stretch" layout-align="center start">
+      <div flex="25" flex-offset="0" flex-offset-xs="0" flex-xs="100" flex-sm="100" flex-md="100" flex-lg="40">
+        <div layout="column" layout-margin>
+          <div flex layout="row" class="gb-why-text-right wow fadeInLeftBig" data-wow-offset="10"
+               data-wow-delay="0.5s" layout-margin>
+            <div layout="column" layout-align="end end">
+              <span class="md-display-1"> Header</span>
                    <span class="md-title">
                      Lorem it has survived not only five centuries,
                      but also the leap into electronic typesetting,
                      remaining essentially unchanged.
                    </span>
-                </div>
-                <div class="gb-icon">
-                  <md-icon class="gb-icon-40"
-                           md-svg-icon="action:ic_lightbulb_outline_24px"></md-icon>
-                </div>
-              </div>
-
-              <div flex layout="row" class="gb-why-text-right wow fadeInLeftBig" data-wow-offset="10"
-                   data-wow-delay="0.5s" layout-margin>
-                <div layout="column" layout-align="end end" >
-                  <span class="md-display-1"> Header</span>
-                   <span class="md-title">
-                     Lorem it has survived not only five centuries,
-                     but also the leap into electronic typesetting,
-                     remaining essentially unchanged.
-                   </span>
-                </div>
-                <div class="gb-icon">
-                  <md-icon class="gb-icon-40"
-                           md-svg-icon="action:ic_lightbulb_outline_24px"></md-icon>
-                </div>
-              </div>
-
-              <div flex layout="row" class="gb-why-text-right wow fadeInLeftBig" data-wow-offset="10"
-                   data-wow-delay="0.5s" layout-margin>
-                <div layout="column" layout-align="end end" >
-                  <span class="md-display-1"> Header</span>
-                   <span class="md-title">
-                     Lorem it has survived not only five centuries,
-                     but also the leap into electronic typesetting,
-                     remaining essentially unchanged.
-                   </span>
-                </div>
-                <div class="gb-icon">
-                  <md-icon class="gb-icon-40"
-                           md-svg-icon="action:ic_lightbulb_outline_24px"></md-icon>
-                </div>
-              </div>
+            </div>
+            <div class="gb-icon">
+              <md-icon class="gb-icon-40"
+                       md-svg-icon="action:ic_lightbulb_outline_24px"></md-icon>
             </div>
           </div>
 
-          <div flex="20" flex-xs="100" flex-sm="100" flex-md="100" class="gb-why-image-parent wow fadeInUpBig" data-wow-offset="10" data-wow-delay="0.5s"
-               layout-align="center center" >
-            <div flex class="gb-why-image" layout-align="center center">
-              <img src="img/why.png">
+          <div flex layout="row" class="gb-why-text-right wow fadeInLeftBig" data-wow-offset="10"
+               data-wow-delay="0.5s" layout-margin>
+            <div layout="column" layout-align="end end">
+              <span class="md-display-1"> Header</span>
+                   <span class="md-title">
+                     Lorem it has survived not only five centuries,
+                     but also the leap into electronic typesetting,
+                     remaining essentially unchanged.
+                   </span>
+            </div>
+            <div class="gb-icon">
+              <md-icon class="gb-icon-40"
+                       md-svg-icon="action:ic_lightbulb_outline_24px"></md-icon>
             </div>
           </div>
 
-          <div flex="25" flex-xs="100" flex-sm="100" flex-md="100" flex-lg="40">
-            <div layout="column" layout-margin="50">
-              <div flex layout="row" class="gb-why-text-left wow fadeInRightBig" data-wow-offset="10" data-wow-delay="0.5s" layout-margin>
-                <div class="gb-icon">
-                  <md-icon class="gb-icon-40"
-                           md-svg-icon="action:ic_lightbulb_outline_24px"></md-icon>
-                </div>
-                <div layout="column" layout-align="start start" >
-                  <span class="md-display-1"> Header</span>
+          <div flex layout="row" class="gb-why-text-right wow fadeInLeftBig" data-wow-offset="10"
+               data-wow-delay="0.5s" layout-margin>
+            <div layout="column" layout-align="end end">
+              <span class="md-display-1"> Header</span>
                    <span class="md-title">
                      Lorem it has survived not only five centuries,
                      but also the leap into electronic typesetting,
                      remaining essentially unchanged.
                    </span>
-                </div>
-              </div>
-
-              <div flex layout="row" class="gb-why-text-left wow fadeInRightBig" data-wow-offset="10" data-wow-delay="0.5s" layout-margin>
-                <div class="gb-icon">
-                  <md-icon class="gb-icon-40"
-                           md-svg-icon="action:ic_lightbulb_outline_24px"></md-icon>
-                </div>
-                <div layout="column" layout-align="start start" >
-                  <span class="md-display-1"> Header</span>
-                   <span class="md-title">
-                     Lorem it has survived not only five centuries,
-                     but also the leap into electronic typesetting,
-                     remaining essentially unchanged.
-                   </span>
-                </div>
-              </div>
-
-              <div flex layout="row" class="gb-why-text-left wow fadeInRightBig" data-wow-offset="10" data-wow-delay="0.5s" layout-margin>
-                <div class="gb-icon">
-                  <md-icon class="gb-icon-40"
-                           md-svg-icon="action:ic_lightbulb_outline_24px"></md-icon>
-                </div>
-                <div layout="column" layout-align="start start" >
-                  <span class="md-display-1"> Header</span>
-                   <span class="md-title">
-                     Lorem it has survived not only five centuries,
-                     but also the leap into electronic typesetting,
-                     remaining essentially unchanged.
-                   </span>
-                </div>
-
-              </div>
+            </div>
+            <div class="gb-icon">
+              <md-icon class="gb-icon-40"
+                       md-svg-icon="action:ic_lightbulb_outline_24px"></md-icon>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- end WHY -->
+
+      <div flex="20" flex-xs="100" flex-sm="100" flex-md="100" class="gb-why-image-parent wow fadeInUpBig" data-wow-offset="10" data-wow-delay="0.5s"
+           layout-align="center center">
+        <div flex class="gb-why-image" layout-align="center center">
+          <img src="img/why.png">
+        </div>
+      </div>
+
+      <div flex="25" flex-xs="100" flex-sm="100" flex-md="100" flex-lg="40">
+        <div layout="column" layout-margin="50">
+          <div flex layout="row" class="gb-why-text-left wow fadeInRightBig" data-wow-offset="10" data-wow-delay="0.5s" layout-margin>
+            <div class="gb-icon">
+              <md-icon class="gb-icon-40"
+                       md-svg-icon="action:ic_lightbulb_outline_24px"></md-icon>
+            </div>
+            <div layout="column" layout-align="start start">
+              <span class="md-display-1"> Header</span>
+                   <span class="md-title">
+                     Lorem it has survived not only five centuries,
+                     but also the leap into electronic typesetting,
+                     remaining essentially unchanged.
+                   </span>
+            </div>
+          </div>
+
+          <div flex layout="row" class="gb-why-text-left wow fadeInRightBig" data-wow-offset="10" data-wow-delay="0.5s" layout-margin>
+            <div class="gb-icon">
+              <md-icon class="gb-icon-40"
+                       md-svg-icon="action:ic_lightbulb_outline_24px"></md-icon>
+            </div>
+            <div layout="column" layout-align="start start">
+              <span class="md-display-1"> Header</span>
+                   <span class="md-title">
+                     Lorem it has survived not only five centuries,
+                     but also the leap into electronic typesetting,
+                     remaining essentially unchanged.
+                   </span>
+            </div>
+          </div>
+
+          <div flex layout="row" class="gb-why-text-left wow fadeInRightBig" data-wow-offset="10" data-wow-delay="0.5s" layout-margin>
+            <div class="gb-icon">
+              <md-icon class="gb-icon-40"
+                       md-svg-icon="action:ic_lightbulb_outline_24px"></md-icon>
+            </div>
+            <div layout="column" layout-align="start start">
+              <span class="md-display-1"> Header</span>
+                   <span class="md-title">
+                     Lorem it has survived not only five centuries,
+                     but also the leap into electronic typesetting,
+                     remaining essentially unchanged.
+                   </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end WHY -->
 <md-content>
   <div class="container" layout-fill>
     <md-toolbar>
@@ -322,47 +321,83 @@
     </section>
 
 
-
   </div>
 
 </md-content>
 <md-content>
-  <section id="pricing" layout-margin="20">
-    <div layout-wrap layout="row" layout-sm="row" layout-xs="row"
-         layout-align-xs="stretch"
-         layout-align-sm="stretch"
-         layout-align="center start"
-    >
-      <md-card flex-gt-xs="30" ng-repeat="prec in pricing"
-               flex="22" flex-sm="46" flex-xs="80" ng-class="{shaded:$mdMedia('xs') }"
-               class="gb-Card"
-      >
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-headline"> FREE</span>
-          </md-card-title-text>
-        </md-card-title>
-        <md-card-content>
-          <md-divider></md-divider>
-          <md-list-item class="md-1-line" ng-repeat="skill in job.skill">
-            <div class="md-list-item-text" layout="column" flex="30">
-              <h4>{{ skill.name }}</h4>
-            </div>
-            <md-progress-linear class="md-accent" md-mode="determinate" value="{{skill.val}}"></md-progress-linear>
-            <md-divider></md-divider>
-          </md-list-item>
-        </md-card-content>
+  <section id="ourClient">
+    <div layout="row">
+      <div ng-repeat="client in ourClient" layout="row">
+        <div ng-class="{slideOutLeft: client.status === 0,slideInRight: client.status === 1}"
+             ng-hide="client.status === 0" data-wow-duration="2s" data-wow-delay="1s">
+
+          company {{$index}}
+        </div>
+      </div>
+    </div>
+  </section>
+</md-content>
+<section id="pricing" layout-margin="20">
+  <md-content>
+    <div layout="column" layout-align="center center">
+      <div class="md-display-2 gb-pricing-title-head" flex>Services We Offer!</div>
+      <div class="md-title gb-pricing-title" flex >
+
+      </div>
+    </div>
+    <div layout-wrap layout="row" layout-sm="row" layout-xs="row" layout-align-xs="stretch"
+         layout-align-sm="stretch" layout-align="center start">
+
+
+      <div flex-gt-xs="30" ng-repeat="prec in pricing"
+           flex="22" flex-sm="46" flex-xs="80" ng-class="{shaded:$mdMedia('xs') }"
+           class="gb-card-pricing md-whiteframe-10dp wow bounceIn animated" flex-gt-lg="20"
+           data-wow-offset="5" data-wow-delay="0.2s">
+        <div class="pricing-header-top">
+          <div class="pricing-header">
+            <p class="price-quality">Standard</p>
+          </div>
+          <div class="price">
+            <p class="price-value">$49</p>
+          </div>
+        </div>
+
         <md-divider></md-divider>
-        <md-card-actions layout="row" layout-align="end end">
+        <md-list-item class="md-1-line">
+          <div class="md-list-item-text" layout="column" flex="30">
+            <h4>item1</h4>
+          </div>
+        </md-list-item>
+        <md-divider></md-divider>
+        <md-list-item class="md-1-line">
+          <div class="md-list-item-text" layout="column" flex="30">
+            <h4>item 2</h4>
+          </div>
+        </md-list-item>
+        <md-divider></md-divider>
+
+        <md-list-item class="md-1-line">
+          <div class="md-list-item-text" layout="column" flex="30">
+            <h4>item 3</h4>
+          </div>
+          <md-divider></md-divider>
+        </md-list-item>
+        <md-list-item class="md-1-line">
+          <div class="md-list-item-text" layout="column" flex="30">
+            <h4>item 4</h4>
+          </div>
+        </md-list-item>
+        <md-divider></md-divider>
+        <div layout="row" layout-align="end end">
           <md-button class="md-icon-button" aria-label="More">
             <md-icon md-svg-icon="navigation:ic_arrow_forward_24px"></md-icon>
           </md-button>
-        </md-card-actions>
-      </md-card>
+        </div>
+      </div>
     </div>
+  </md-content>
+</section>
 
-  </section>
-</md-content>
 
 <md-content class="footer" layout="row" layout-align="center center" layout-padding>
   <div id="footer" class="footer-wrap" flex flex-gt-md="60" flex-sm="100">
@@ -407,5 +442,6 @@
 <script src="bower_components/angular-material-icons/angular-material-icons.min.js"></script>
 <script src="bower_components/wow/dist/wow.min.js"></script>
 <script src="app.js"></script>
+<script src="directive/carusel.directive.js"></script>
 </body>
 </html>
